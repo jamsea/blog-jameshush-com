@@ -45,6 +45,12 @@ const Seo = ({
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
+      link={[
+        {
+          rel: "stylesheet",
+          href: "https://use.typekit.net/sud3igi.css?display=swap",
+        },
+      ]}
       meta={[
         {
           name: `description`,
