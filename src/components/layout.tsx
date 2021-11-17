@@ -1,7 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const Layout = ({ location, title, children }) => {
+interface LayoutProps {
+  location: Location
+  title?: string
+  children: React.ReactNode
+}
+
+const Layout = ({ location, title = "", children }: LayoutProps) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -25,9 +31,8 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        © {new Date().getFullYear()},{` `}
+        <a href="https://www.jameshush.com">James Hush</a>
       </footer>
     </div>
   )
