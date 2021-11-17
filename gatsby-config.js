@@ -7,9 +7,6 @@ module.exports = {
     },
     description: `DevOps in Taipei`,
     siteUrl: `https://blog.jameshush.com`,
-    social: {
-      linkedin: `jameshush`,
-    },
   },
   plugins: [
     `gatsby-plugin-image`,
