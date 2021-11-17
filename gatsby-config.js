@@ -3,9 +3,9 @@ module.exports = {
     title: `James Hush's Blog`,
     author: {
       name: `James Hush`,
-      summary: `engineering excellence on the keynote stage.`,
+      summary: `, deployed every Friday at 5:00pm.`,
     },
-    description: `DevOps in Taipei`,
+    description: `Keynote speaker, coach & advisor.`,
     siteUrl: `https://blog.jameshush.com`,
   },
   plugins: [
