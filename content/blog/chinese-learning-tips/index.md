@@ -18,15 +18,15 @@ A bit cheesy, but write down why you're learning on a sticky note and put it on 
 
 You _already_ have time to study. I promise. The trick is to make time to study by blocking out time in your calendar and sticking to it, and/or getting accountability by joining a study group or getting a teacher. The other trick is to make your phone work _for_ you and turn it into a distraction-free language learning tool. I have two videos below showing how I do this.
 
-[https://www.youtube.com/watch?v=qqneFCSSMTE](https://www.youtube.com/watch?v=qqneFCSSMTE)
+`youtube:https://www.youtube.com/embed/qqneFCSSMTE`
 
 - How I set up my calendar starts at 17:00 ish
 
-[https://youtu.be/3o-umKEIcL4?t=1048](https://youtu.be/3o-umKEIcL4?t=1048)
+`youtube:https://www.youtube.com/embed/3o-umKEIcL4?t=1048`
 
 # Focus on Vocabulary
 
-Do not study grammar. You'll never remember it. Instead focus on learning characters. _Especially_ if you're a beginner. **You can noun yourself out of most situations.** Do whatever it takes to learn 1000 of them. Once you get to 1000 it gets a lot easier because you'll be able to listen to TV shows and podcasts to build more vocabulary. My general schedule looks like:
+Do not study grammar. You'll never remember it. Instead, focus on learning characters. _Especially_ if you're a beginner. **You can noun yourself out of most situations.** Do whatever it takes to learn 1000 of them. Once you get to 1000 it gets a lot easier because you'll be able to listen to TV shows and podcasts to build more vocabulary. My general schedule looks like:
 
 - 45-60 minutes in the morning going through flashcards of example sentences from Chinese lessons.
 - 1-hour lesson with Chinese teacher
