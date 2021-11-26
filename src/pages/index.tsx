@@ -1,12 +1,36 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, PageProps, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+type PageQueryData = {
+  site: {
+    siteMetadata: {
+      title?: string
+    }
+  }
+  allMarkdownRemark: {
+    nodes: {
+      excerpt: string
+      frontmatter: {
+        date: string
+        title: string
+        description?: string
+        excerpt?: string
+      }
+      fields: {
+        slug: string
+      }
+    }[]
+  }
+}
+
+type IndexPageProps = PageProps<PageQueryData>
+
+const BlogIndex = ({ data, location }: IndexPageProps) => {
+  const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
@@ -72,7 +96,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: {}, frontmatter: { hidden: { ne: true } } }
+    ) {
       nodes {
         excerpt
         fields {
