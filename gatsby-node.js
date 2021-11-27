@@ -17,6 +17,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         ) {
           nodes {
             id
+            frontmatter {
+              hidden
+            }
             fields {
               slug
             }
@@ -42,8 +45,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+      const previousPost = index === 0 ? null : posts[index - 1]
+      const nextPost = index === posts.length - 1 ? null : posts[index + 1]
+
+      const nextPostId =
+        nextPost && !nextPost.frontmatter?.hidden ? nextPost.id : null
+      const previousPostId =
+        previousPost && !previousPost.frontmatter?.hidden
+          ? previousPost.id
+          : null
 
       createPage({
         path: post.fields.slug,
@@ -101,6 +111,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      hidden: Boolean
     }
 
     type Fields {

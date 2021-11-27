@@ -1,13 +1,13 @@
 ---
 title: Automating Deployments
 date: "2021-11-26T05:42:58.934Z"
-description: ""
+description: "Even before my main focus was DevOps, I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments, so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that hasn't _quite_ been automated yet."
 hidden: true
 ---
 
 Automating deployments is the first thing I do whenever I join any new company.
 
-Even before my main focus was DevOps
+Even before my main focus was DevOps, I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments, so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that hasn't _quite_ been automated yet.
 
 # Make a checklist
 
@@ -55,7 +55,7 @@ zip -r foo.zip dist/website/foo
 
 # Harder to automate commands
 cat << EOF
-🎉 Website deployed! Here are the next steps:
+🎉 Website deployed! Here are the next## steps:
  [] Go to https://www.example.com/status and make sure there are no errors.
  [] Go to https://www.example.com and hard reload on Firefox to make sure it works.
  [] Tag @everyone in #engineering on slack with these checkboxes checked.

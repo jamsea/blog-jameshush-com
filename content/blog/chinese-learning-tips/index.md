@@ -2,6 +2,7 @@
 title: Chinese Language Learning Tips
 date: "2021-11-17T13:27:20Z"
 description: "Here's a list of notes I've discovered while studying Chinese. I've gone through lots of trial and error over the past few years."
+hidden: false
 ---
 
 Here's a list of notes I've discovered while studying Chinese. I've gone through lots of trial and error over the past few years. The number 1 trick to learning Chinese is:

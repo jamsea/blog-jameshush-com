@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 interface LayoutProps {
   location: Location
@@ -7,7 +8,7 @@ interface LayoutProps {
   children: React.ReactNode
 }
 
-const Layout = ({ location, title = "", children }: LayoutProps) => {
+const Layout = ({ location, children }: LayoutProps) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -15,13 +16,23 @@ const Layout = ({ location, title = "", children }: LayoutProps) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <StaticImage
+          src="../images/james_hush_logo.svg"
+          alt="James Hush Logo"
+          placeholder="tracedSVG"
+          height={111}
+        />
       </h1>
     )
   } else {
     header = (
       <Link className="header-link-home" to="/">
-        {title}
+        <StaticImage
+          src="../images/james_hush_logo.svg"
+          alt="James Hush Logo"
+          placeholder="tracedSVG"
+          height={111}
+        />
       </Link>
     )
   }

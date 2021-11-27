@@ -3,7 +3,7 @@ module.exports = {
     title: `James Hush's Blog`,
     author: {
       name: `James Hush`,
-      summary: `, deployed every Friday at 5:00pm.`,
+      summary: `Keynote speaker, coach & advisor`,
     },
     description: `Keynote speaker, coach & advisor.`,
     siteUrl: `https://blog.jameshush.com`,
