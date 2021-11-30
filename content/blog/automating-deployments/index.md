@@ -1,13 +1,13 @@
 ---
 title: Automating Deployments
 date: "2021-11-26T05:42:58.934Z"
-description: "Even before my main focus was DevOps, I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments, so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that hasn't _quite_ been automated yet."
+description: "Even before my main focus was DevOps, I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that hasn't _quite_ been automated yet."
 hidden: true
 ---
 
 Automating deployments is the first thing I do whenever I join any new company.
 
-Even before my main focus was DevOps, I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments, so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that hasn't _quite_ been automated yet.
+I _hate_ wasting my time waiting for something to build and deploy. Instead of checking YouTube or Reddit while waiting, I use that build time to figure out ways to automate deployments so I don't have to wait as long the next time. Below are the steps I follow whenever I run into a new deployment process that needs optimizing.
 
 # Make a checklist
 
