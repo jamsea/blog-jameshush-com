@@ -62,6 +62,10 @@ cat << EOF
 EOF
 ```
 
+We still haven't automated everything. That's _OK_. We don't _need_ to automate _everything_ all at once. For anything tricky to automate (like the currently manually performed smoke test), we echo the steps into the shell to remind engineers to do them. This is not a perfect solution, but it's the difference between shipping something _today_ that _works_ and provides value to the whole engineering team and waiting until everything is "perfect."
+
+The other benefit of converting our README to a shell script is that team members are more likely to "fix" a shell script rather than "update" a document, even if that "fix" is just a copy change in an echo statement.
+
 # Add it to Github actions or Jenkins
 
 If you do not have any CI/CD tool setup and already use Github, I recommend using Github actions. In the short term, yes, you do have to worry about Github actions going down, but that can be handled later by setting up custom Github Actions runners later. If the action _does_ go down while you're setting things up, you can always run the action from your computer using [act](https://github.com/nektos/act) if you're in a pinch.
