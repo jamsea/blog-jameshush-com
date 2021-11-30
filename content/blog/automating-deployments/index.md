@@ -55,10 +55,16 @@ zip -r foo.zip dist/website/foo
 
 # Harder to automate commands
 cat << EOF
-🎉 Website deployed! Here are the next## steps:
+###############################################################################
+
+🎉 Website deployed! Here are the next steps:
  [] Go to https://www.example.com/status and make sure there are no errors.
- [] Go to https://www.example.com and hard reload on Firefox to make sure it works.
+ [] Go to https://www.example.com and hard reload on Firefox
+    to make sure it works.
  [] Tag @everyone in #engineering on slack with these checkboxes checked.
+
+###############################################################################
+
 EOF
 ```
 
