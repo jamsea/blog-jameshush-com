@@ -1,7 +1,7 @@
 ---
 title: Feature Flags
 date: "2021-11-26T05:42:58.934Z"
-description: ""
+description: "It was my 2nd day at $STARTUP when I witnessed the first of many outages caused by a deployment."
 hidden: true
 ---
 
