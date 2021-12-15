@@ -13,7 +13,7 @@ const ActiveCampaignForm = () => {
       mode: "no-cors",
     })
       .then(res => {
-        console.log(res)
+        console.log(JSON.stringify(res, undefined, 4))
         setFormSubmitted(true)
         setTimeout(() => {
           setFormSubmitted(false)
