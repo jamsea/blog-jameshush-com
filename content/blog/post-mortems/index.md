@@ -27,12 +27,12 @@ If it's too tricky to tie an outage to revenue at your company, perhaps you coul
 
 > Perhaps the takeaway is to calm down?
 
-From there, how big the disruption determines how much effort you put into fixing it. A $1,000 outage and a $100,000 outage should be treated completely differently. Oftentimes, this is as easy as setting up an extra alert.
+How big the disruption determines how much effort you put into fixing it. We treat an $1,000 outage and a $100,000 outage entirely differently. Often, this is as easy as setting up an extra alert.
 
-From there, another good step is adding another check earlier in our pipeline, if possible. One good example:
-I was working at a company where that page stopped loading because of a misspelled import statement.
+If possible, another good step is adding a check earlier in our pipeline. One great example:
+I worked at a company where that page stopped loading because of a misspelled import statement.
 
-Calling it a misspelling is painting the issue with too broad of a brush. It turns out Macs are case sensitive, and Linux machines aren't case sensitive when importing file names.
+Calling it a misspelling is painting the issue with too broad a brush. MacBooks are case sensitive, and Linux machines aren't case sensitive when importing file names.
 
 Since the engineers on the team were using Macs, it Worked Fine On Their Machine™, but in production, everything broke.
 
