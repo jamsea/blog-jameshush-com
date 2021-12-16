@@ -1,7 +1,7 @@
 ---
 title: Post Mortems
 date: "2021-12-16T13:55:30.062Z"
-description: ""
+description: "Production issues are inevitable. Remember, even Ford has to do recalls."
 hidden: false
 ---
 
