@@ -27,7 +27,7 @@ If it's too tricky to tie an outage to revenue at your company, perhaps you coul
 
 > Perhaps the takeaway is to calm down?
 
-How big the disruption determines how much effort you put into fixing it. We treat an $1,000 outage and a $100,000 outage entirely differently. Often, this is as easy as setting up an extra alert.
+How big the disruption determines how much effort you put into fixing it. We treat a $1,000 outage and a $100,000 outage entirely differently. Often, this is as easy as setting up an extra alert.
 
 If possible, another good step is adding a check earlier in our pipeline. One great example:
 I worked at a company where that page stopped loading because of a misspelled import statement.
