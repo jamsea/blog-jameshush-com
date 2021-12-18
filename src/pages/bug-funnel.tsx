@@ -35,7 +35,7 @@ const ActiveCampaignForm = () => {
       <input type="hidden" name="act" value="sub" />
       <input type="hidden" name="v" value="2" />
       <input type="hidden" name="or" value="b37539ce92982cb5dd3e61c4973e8250" />
-      <div>
+      <div className="bg-gold">
         <div>
           <label>First Name</label>
           <div>
@@ -49,7 +49,12 @@ const ActiveCampaignForm = () => {
           </div>
         </div>
         <div>
-          <button type="submit">Sign Up</button>
+          <button
+            className="transition ease-in-out delay-400 text-white bg-red border-white border-4 p-4  hover:bg-navy"
+            type="submit"
+          >
+            Sign Up
+          </button>
         </div>
       </div>
     </form>

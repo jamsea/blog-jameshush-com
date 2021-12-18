@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["howstuffworks", "Mortems", "triaging"]
+  "cSpell.words": ["howstuffworks", "triaging"],
+  "css.validate": false,
+  "stylelint.enable": true,
+  "scss.validate": false
 }
