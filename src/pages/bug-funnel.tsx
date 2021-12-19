@@ -50,7 +50,7 @@ const ActiveCampaignForm = () => {
         </div>
         <div>
           <button
-            className="transition ease-in-out delay-400 text-white bg-red border-white border-4 p-4  hover:bg-navy"
+            className="transition ease-in-out delay-400 text-white bg-red border-white border-4 p-4 hover:bg-navy"
             type="submit"
           >
             Sign Up
