@@ -26,7 +26,10 @@ const ActiveCampaignForm = () => {
   return formSubmitted ? (
     <h1>Thank you for signing up!</h1>
   ) : (
-    <form onSubmit={e => handleSubmit(e)}>
+    <form
+      className="bg-gold flex items-center flex-col"
+      onSubmit={e => handleSubmit(e)}
+    >
       <input type="hidden" name="u" value="3" />
       <input type="hidden" name="f" value="3" />
       <input type="hidden" name="s" />
@@ -35,17 +38,28 @@ const ActiveCampaignForm = () => {
       <input type="hidden" name="act" value="sub" />
       <input type="hidden" name="v" value="2" />
       <input type="hidden" name="or" value="b37539ce92982cb5dd3e61c4973e8250" />
-      <div className="bg-gold font-sofia-pro max-w-md font-black text-base">
+      <div className="p-4 bg-gold font-sofia-pro font-black text-base w-full">
         <div className="mb-2">
-          <label>First Name</label>
+          <label className="mb-2">First Name</label>
           <div>
-            <input type="text" name="fullname" placeholder="" />
+            <input
+              className="w-full border-navy border-2"
+              type="text"
+              name="fullname"
+              placeholder=""
+            />
           </div>
         </div>
         <div className="mb-2">
           <label>Email *</label>
           <div>
-            <input type="text" name="email" placeholder="" required />
+            <input
+              className="w-full border-navy border-2"
+              type="text"
+              name="email"
+              placeholder=""
+              required
+            />
           </div>
         </div>
         <div>
@@ -74,10 +88,10 @@ const BugFunnel = ({ location }: BugFunnelProps) => {
         Want to ship more high-quality features faster?
       </h1>
       <ActiveCampaignForm />
+      <h1 className="font-sofia-pro">"We don't deploy on Fridays."</h1>
       <p>
-        "We don't deploy on Fridays." Have you heard this before? I used to feel
-        the same way. Until we had to push an update to Superbowl.com during the
-        Super Bowl.
+        Have you heard this before? I used to feel the same way. Until we had to
+        push an update to Superbowl.com during the Super Bowl.
       </p>
 
       <p>
@@ -96,4 +110,4 @@ const BugFunnel = ({ location }: BugFunnelProps) => {
   )
 }
 
-export default ActiveCampaignForm
+export default BugFunnel
