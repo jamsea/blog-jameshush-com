@@ -10,7 +10,12 @@ module.exports = {
       sand: "#fcf5e6",
       gold: "#e5ae35",
     },
-    extend: { animation: { fade: "transition: all .4s ease" } },
+    extend: {
+      fontFamily: {
+        sans: ["dinosaur", "Arial", "sans-serif"],
+        "sofia-pro": ["sofia-pro", "sans-serif"],
+      },
+    },
   },
   variants: {},
   plugins: [require("@tailwindcss/forms")],

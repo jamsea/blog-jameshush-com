@@ -35,22 +35,22 @@ const ActiveCampaignForm = () => {
       <input type="hidden" name="act" value="sub" />
       <input type="hidden" name="v" value="2" />
       <input type="hidden" name="or" value="b37539ce92982cb5dd3e61c4973e8250" />
-      <div className="bg-gold">
-        <div>
+      <div className="bg-gold font-sofia-pro max-w-md font-black text-base">
+        <div className="mb-2">
           <label>First Name</label>
           <div>
             <input type="text" name="fullname" placeholder="" />
           </div>
         </div>
-        <div>
-          <label>Email*</label>
+        <div className="mb-2">
+          <label>Email *</label>
           <div>
             <input type="text" name="email" placeholder="" required />
           </div>
         </div>
         <div>
           <button
-            className="transition ease-in-out delay-400 text-white bg-red border-white border-4 p-4 hover:bg-navy"
+            className="text-4xl w-full transition ease-in-out delay-400 text-white bg-red border-white hover:bg-navy border-4 p-6 pt-5"
             type="submit"
           >
             Sign Up
@@ -70,7 +70,9 @@ type BugFunnelProps = {
 const BugFunnel = ({ location }: BugFunnelProps) => {
   return (
     <Layout location={location} title={"bug funnel"}>
-      <h1>Want to ship more high-quality features faster?</h1>
+      <h1 className="font-sofia-pro">
+        Want to ship more high-quality features faster?
+      </h1>
       <ActiveCampaignForm />
       <p>
         "We don't deploy on Fridays." Have you heard this before? I used to feel
@@ -94,4 +96,4 @@ const BugFunnel = ({ location }: BugFunnelProps) => {
   )
 }
 
-export default BugFunnel
+export default ActiveCampaignForm
