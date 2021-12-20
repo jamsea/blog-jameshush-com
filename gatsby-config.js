@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://blog.jameshush.com`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
