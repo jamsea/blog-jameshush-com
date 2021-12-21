@@ -6,7 +6,7 @@ module.exports = {
       summary: `Keynote speaker, coach & advisor`,
     },
     description: `Keynote speaker, coach & advisor.`,
-    siteUrl: `https://blog.jameshush.com`,
+    siteUrl: `https://www.jameshush.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
