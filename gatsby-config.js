@@ -140,7 +140,7 @@ module.exports = {
         name: `James Hush's Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#fcf5e5`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         theme_color: `#fcf5e6`,
