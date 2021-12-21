@@ -135,6 +135,64 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allMarkdownRemark {
+            nodes {
+              frontmatter {
+                date(formatString: "YYYY-MM-DD")
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        `,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+          allMarkdownRemark: { nodes: allPosts },
+        }) => {
+          const pages = allPosts.map(post => {
+            const path = post.fields.slug
+            const page = allPages.find(p => p.path === path)
+            if (page) {
+              return { path: page.path, date: post.frontmatter.date }
+            }
+          })
+          console.log(pages)
+
+          return pages
+        },
+        serialize: ({ path, date }) => {
+          let entry = {
+            url: path,
+            changefreq: "daily",
+            priority: 0.5,
+          }
+
+          if (date) {
+            entry.priority = 0.7
+            entry.lastmod = date
+          }
+
+          return entry
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `James Hush's Blog`,
