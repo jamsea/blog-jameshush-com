@@ -172,7 +172,6 @@ module.exports = {
               return { path: page.path, date: post.frontmatter.date }
             }
           })
-          console.log(pages)
 
           return pages
         },
