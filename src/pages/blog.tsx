@@ -57,11 +57,7 @@ const BlogIndex = ({ data, location }: IndexPageProps) => {
 
           return (
             <li key={post.fields.slug}>
-              <article
-                className="prose prose-xl"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
+              <article itemScope itemType="http://schema.org/Article">
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
