@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "typeRoots": ["./node_modules/@types", "./src/typings/global.d.ts"],
     "target": "es6",
     "jsx": "react",
     "lib": ["dom", "es2015", "es2017"],
