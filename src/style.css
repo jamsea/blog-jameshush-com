@@ -226,6 +226,11 @@ table thead tr th {
   background-color: var(--color-white);
 }
 
+.bio {
+  display: flex;
+  margin-bottom: var(--spacing-16);
+}
+
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
 }
@@ -263,11 +268,6 @@ table thead tr th {
   font-weight: var(--fontWeight-bold);
   text-decoration: none;
   font-size: var(--fontSize-2);
-}
-
-.bio {
-  display: flex;
-  margin-bottom: var(--spacing-16);
 }
 
 .bio p {
