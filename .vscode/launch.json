@@ -21,6 +21,20 @@
       "args": ["build"],
       "runtimeArgs": ["--nolazy"],
       "console": "integratedTerminal"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Client side in Chrome",
+      "url": "https://www.jameshush.localhost:8000",
+      "webRoot": "${workspaceFolder}/gatsby"
+    },
+    {
+      "name": "Client side in Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "url": "https://www.jameshush.localhost:8000"
     }
   ]
 }
