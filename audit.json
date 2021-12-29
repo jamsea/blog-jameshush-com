@@ -1,0 +1,1012 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@gatsbyjs/webpack-hot-middleware": {
+      "name": "@gatsbyjs/webpack-hot-middleware",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "ansi-html"
+      ],
+      "effects": [
+        "gatsby"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@gatsbyjs/webpack-hot-middleware"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "@graphql-tools/url-loader": {
+      "name": "@graphql-tools/url-loader",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "ws"
+      ],
+      "effects": [],
+      "range": "6.4.1-alpha-0ea0f8b7.0 - 6.10.1",
+      "nodes": [
+        "node_modules/@graphql-tools/url-loader"
+      ],
+      "fixAvailable": true
+    },
+    "@pmmmwh/react-refresh-webpack-plugin": {
+      "name": "@pmmmwh/react-refresh-webpack-plugin",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "ansi-html"
+      ],
+      "effects": [
+        "gatsby"
+      ],
+      "range": "<=0.5.0-rc.6",
+      "nodes": [
+        "node_modules/@pmmmwh/react-refresh-webpack-plugin"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "ansi-html": {
+      "name": "ansi-html",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005059,
+          "name": "ansi-html",
+          "dependency": "ansi-html",
+          "title": "Uncontrolled Resource Consumption in ansi-html",
+          "url": "https://github.com/advisories/GHSA-whgm-jr23-g3j9",
+          "severity": "high",
+          "range": "<=0.0.7"
+        }
+      ],
+      "effects": [
+        "@gatsbyjs/webpack-hot-middleware",
+        "@pmmmwh/react-refresh-webpack-plugin"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/ansi-html"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "ansi-regex": {
+      "name": "ansi-regex",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1004946,
+          "name": "ansi-regex",
+          "dependency": "ansi-regex",
+          "title": " Inefficient Regular Expression Complexity in chalk/ansi-regex",
+          "url": "https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+          "severity": "moderate",
+          "range": ">2.1.1 <5.0.1"
+        }
+      ],
+      "effects": [
+        "strip-ansi"
+      ],
+      "range": ">2.1.1 <5.0.1",
+      "nodes": [
+        "node_modules/strip-ansi/node_modules/ansi-regex"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "babel-plugin-remove-graphql-queries": {
+      "name": "babel-plugin-remove-graphql-queries",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.17.0-next.0",
+      "nodes": [
+        "node_modules/babel-plugin-remove-graphql-queries"
+      ],
+      "fixAvailable": true
+    },
+    "browserslist": {
+      "name": "browserslist",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005174,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Regular Expression Denial of Service in browserslist",
+          "url": "https://github.com/advisories/GHSA-w8qv-6jwh-64r5",
+          "severity": "moderate",
+          "range": ">=4.0.0 <4.16.5"
+        }
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "4.0.0 - 4.16.4",
+      "nodes": [
+        "node_modules/react-dev-utils/node_modules/browserslist"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "css-select": {
+      "name": "css-select",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "nth-check"
+      ],
+      "effects": [
+        "svgo"
+      ],
+      "range": "<=3.1.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-sharp/node_modules/css-select"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sharp",
+        "version": "2.14.4",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby": {
+      "name": "gatsby",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@gatsbyjs/webpack-hot-middleware",
+        "@pmmmwh/react-refresh-webpack-plugin",
+        "gatsby-cli",
+        "react-dev-utils",
+        "strip-ansi"
+      ],
+      "effects": [
+        "babel-plugin-remove-graphql-queries",
+        "gatsby-plugin-feed",
+        "gatsby-plugin-gatsby-cloud",
+        "gatsby-plugin-google-gtag",
+        "gatsby-plugin-image",
+        "gatsby-plugin-manifest",
+        "gatsby-plugin-offline",
+        "gatsby-plugin-page-creator",
+        "gatsby-plugin-postcss",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-sharp",
+        "gatsby-plugin-sitemap",
+        "gatsby-plugin-typescript",
+        "gatsby-plugin-utils",
+        "gatsby-remark-copy-linked-files",
+        "gatsby-remark-images",
+        "gatsby-remark-prismjs",
+        "gatsby-remark-responsive-iframe",
+        "gatsby-remark-smartypants",
+        "gatsby-source-filesystem",
+        "gatsby-transformer-remark",
+        "gatsby-transformer-sharp"
+      ],
+      "range": "2.3.24-ink.60 - 2.3.24-ink.61 || 2.4.0-0 - 2.4.0-alpha.3 || >=2.6.0-alpha.1",
+      "nodes": [
+        "node_modules/gatsby"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-cli": {
+      "name": "gatsby-cli",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "gatsby-recipes",
+        "strip-ansi"
+      ],
+      "effects": [
+        "gatsby"
+      ],
+      "range": "2.5.9-ink.60 - 2.5.9-ink.61 || >=2.6.0-0",
+      "nodes": [
+        "node_modules/gatsby-cli"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-feed": {
+      "name": "gatsby-plugin-feed",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.14.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-feed"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-feed",
+        "version": "2.13.1",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-gatsby-cloud": {
+      "name": "gatsby-plugin-gatsby-cloud",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": "1.0.0 - 1.0.1-next.1 || >=1.1.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-gatsby-cloud"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-gatsby-cloud",
+        "version": "1.0.2",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-google-gtag": {
+      "name": "gatsby-plugin-google-gtag",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.9.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-google-gtag"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-google-gtag",
+        "version": "2.8.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-image": {
+      "name": "gatsby-plugin-image",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby",
+        "gatsby-plugin-sharp"
+      ],
+      "effects": [],
+      "range": ">=0.8.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-image"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-image",
+        "version": "0.7.2",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-manifest": {
+      "name": "gatsby-plugin-manifest",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.13.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-manifest"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-manifest",
+        "version": "2.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-offline": {
+      "name": "gatsby-plugin-offline",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=3.11.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-offline"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-offline",
+        "version": "3.10.2",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-page-creator": {
+      "name": "gatsby-plugin-page-creator",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "gatsby",
+        "gatsby-plugin-utils"
+      ],
+      "effects": [],
+      "range": ">=2.11.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-page-creator"
+      ],
+      "fixAvailable": true
+    },
+    "gatsby-plugin-postcss": {
+      "name": "gatsby-plugin-postcss",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=3.8.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-postcss"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-react-helmet": {
+      "name": "gatsby-plugin-react-helmet",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=3.11.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-react-helmet"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-react-helmet",
+        "version": "3.10.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-sharp": {
+      "name": "gatsby-plugin-sharp",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby",
+        "gatsby-plugin-utils",
+        "svgo"
+      ],
+      "effects": [
+        "gatsby-plugin-image",
+        "gatsby-remark-images",
+        "gatsby-transformer-sharp"
+      ],
+      "range": ">=2.0.31",
+      "nodes": [
+        "node_modules/gatsby-plugin-sharp"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sharp",
+        "version": "2.14.4",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-sitemap": {
+      "name": "gatsby-plugin-sitemap",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.13.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-sitemap"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sitemap",
+        "version": "2.12.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-plugin-typescript": {
+      "name": "gatsby-plugin-typescript",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.13.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-typescript"
+      ],
+      "fixAvailable": true
+    },
+    "gatsby-plugin-utils": {
+      "name": "gatsby-plugin-utils",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [
+        "gatsby-plugin-page-creator",
+        "gatsby-plugin-sharp"
+      ],
+      "range": ">=0.10.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-plugin-utils"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sharp",
+        "version": "2.14.4",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-recipes": {
+      "name": "gatsby-recipes",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "graphql-compose",
+        "remark-parse"
+      ],
+      "effects": [
+        "gatsby-cli"
+      ],
+      "range": "0.0.7-unifiedroutes.76 - 0.0.7-unifiedroutes-v2.135 || >=0.1.31",
+      "nodes": [
+        "node_modules/gatsby-recipes"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-remark-copy-linked-files": {
+      "name": "gatsby-remark-copy-linked-files",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.11.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-remark-copy-linked-files"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-remark-copy-linked-files",
+        "version": "2.10.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-remark-github": {
+      "name": "gatsby-remark-github",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "remark-github-plugin"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/gatsby-remark-github"
+      ],
+      "fixAvailable": false
+    },
+    "gatsby-remark-images": {
+      "name": "gatsby-remark-images",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby",
+        "gatsby-plugin-sharp"
+      ],
+      "effects": [],
+      "range": "1.6.0-alpha.03b9df85 - 2.0.0-alpha.23 || 2.1.0-alpha.80a21f04 - 2.1.0-alpha.e328d33f || >=3.12.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-remark-images"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-remark-images",
+        "version": "3.11.1",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-remark-prismjs": {
+      "name": "gatsby-remark-prismjs",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=3.14.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-remark-prismjs"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-remark-prismjs",
+        "version": "3.13.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-remark-responsive-iframe": {
+      "name": "gatsby-remark-responsive-iframe",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.12.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-remark-responsive-iframe"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-remark-responsive-iframe",
+        "version": "2.11.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-remark-smartypants": {
+      "name": "gatsby-remark-smartypants",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.11.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-remark-smartypants"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-remark-smartypants",
+        "version": "2.10.0",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-source-filesystem": {
+      "name": "gatsby-source-filesystem",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby"
+      ],
+      "effects": [],
+      "range": ">=2.12.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-source-filesystem"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-source-filesystem",
+        "version": "2.11.1",
+        "isSemVerMajor": true
+      }
+    },
+    "gatsby-transformer-remark": {
+      "name": "gatsby-transformer-remark",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby",
+        "sanitize-html"
+      ],
+      "effects": [],
+      "range": "*",
+      "nodes": [
+        "node_modules/gatsby-transformer-remark"
+      ],
+      "fixAvailable": false
+    },
+    "gatsby-transformer-sharp": {
+      "name": "gatsby-transformer-sharp",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "gatsby",
+        "gatsby-plugin-sharp"
+      ],
+      "effects": [],
+      "range": ">=2.13.0-next.0",
+      "nodes": [
+        "node_modules/gatsby-transformer-sharp"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-transformer-sharp",
+        "version": "2.12.1",
+        "isSemVerMajor": true
+      }
+    },
+    "graphql-compose": {
+      "name": "graphql-compose",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "object-path"
+      ],
+      "effects": [
+        "gatsby-recipes"
+      ],
+      "range": "0.1.0 - 1.5.1 || 7.24.1 - 9.0.2",
+      "nodes": [
+        "node_modules/graphql-compose"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "immer": {
+      "name": "immer",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005029,
+          "name": "immer",
+          "dependency": "immer",
+          "title": "Prototype Pollution in immer",
+          "url": "https://github.com/advisories/GHSA-33f9-j839-rf8h",
+          "severity": "critical",
+          "range": "<9.0.6"
+        }
+      ],
+      "effects": [
+        "react-dev-utils"
+      ],
+      "range": "<9.0.6",
+      "nodes": [
+        "node_modules/immer"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "node-fetch": {
+      "name": "node-fetch",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005560,
+          "name": "node-fetch",
+          "dependency": "node-fetch",
+          "title": "The `size` option isn't honored after following a redirect in node-fetch",
+          "url": "https://github.com/advisories/GHSA-w7rc-rwvf-8q5r",
+          "severity": "low",
+          "range": "<2.6.1"
+        }
+      ],
+      "effects": [
+        "remark-github-plugin"
+      ],
+      "range": "<2.6.1",
+      "nodes": [
+        "node_modules/remark-github-plugin/node_modules/node-fetch"
+      ],
+      "fixAvailable": false
+    },
+    "nth-check": {
+      "name": "nth-check",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1004967,
+          "name": "nth-check",
+          "dependency": "nth-check",
+          "title": "Inefficient Regular Expression Complexity in nth-check",
+          "url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+          "severity": "moderate",
+          "range": "<2.0.1"
+        }
+      ],
+      "effects": [
+        "css-select"
+      ],
+      "range": "<2.0.1",
+      "nodes": [
+        "node_modules/gatsby-plugin-sharp/node_modules/nth-check"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sharp",
+        "version": "2.14.4",
+        "isSemVerMajor": true
+      }
+    },
+    "object-path": {
+      "name": "object-path",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1004968,
+          "name": "object-path",
+          "dependency": "object-path",
+          "title": "Prototype Pollution in object-path",
+          "url": "https://github.com/advisories/GHSA-8v63-cqqc-6r2c",
+          "severity": "high",
+          "range": "<0.11.8"
+        },
+        {
+          "source": 1005050,
+          "name": "object-path",
+          "dependency": "object-path",
+          "title": "Prototype Pollution in object-path",
+          "url": "https://github.com/advisories/GHSA-v39p-96qg-c8rf",
+          "severity": "moderate",
+          "range": "<0.11.6"
+        }
+      ],
+      "effects": [
+        "graphql-compose"
+      ],
+      "range": "<=0.11.7",
+      "nodes": [
+        "node_modules/object-path"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "react-dev-utils": {
+      "name": "react-dev-utils",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        "browserslist",
+        "immer"
+      ],
+      "effects": [
+        "gatsby"
+      ],
+      "range": "6.0.0-next.03604a46 - 12.0.0-next.60",
+      "nodes": [
+        "node_modules/react-dev-utils"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "remark-github-plugin": {
+      "name": "remark-github-plugin",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "node-fetch"
+      ],
+      "effects": [
+        "gatsby-remark-github"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/remark-github-plugin"
+      ],
+      "fixAvailable": false
+    },
+    "remark-parse": {
+      "name": "remark-parse",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "trim"
+      ],
+      "effects": [
+        "gatsby-recipes"
+      ],
+      "range": "<=8.0.3",
+      "nodes": [
+        "node_modules/remark-parse"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "sanitize-html": {
+      "name": "sanitize-html",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005383,
+          "name": "sanitize-html",
+          "dependency": "sanitize-html",
+          "title": "Improper Input Validation in sanitize-html",
+          "url": "https://github.com/advisories/GHSA-rjqq-98f6-6j3r",
+          "severity": "moderate",
+          "range": "<2.3.1"
+        },
+        {
+          "source": 1005384,
+          "name": "sanitize-html",
+          "dependency": "sanitize-html",
+          "title": "Improper Input Validation in sanitize-html",
+          "url": "https://github.com/advisories/GHSA-mjxr-4v3x-q3m4",
+          "severity": "moderate",
+          "range": "<2.3.2"
+        }
+      ],
+      "effects": [
+        "gatsby-transformer-remark"
+      ],
+      "range": "<=2.3.1",
+      "nodes": [
+        "node_modules/sanitize-html"
+      ],
+      "fixAvailable": false
+    },
+    "strip-ansi": {
+      "name": "strip-ansi",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "ansi-regex"
+      ],
+      "effects": [
+        "gatsby",
+        "gatsby-cli",
+        "yurnalist"
+      ],
+      "range": "4.0.0 - 5.2.0",
+      "nodes": [
+        "node_modules/strip-ansi"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "svgo": {
+      "name": "svgo",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "css-select"
+      ],
+      "effects": [
+        "gatsby-plugin-sharp"
+      ],
+      "range": "1.0.0 - 1.3.2",
+      "nodes": [
+        "node_modules/gatsby-plugin-sharp/node_modules/svgo"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-sharp",
+        "version": "2.14.4",
+        "isSemVerMajor": true
+      }
+    },
+    "trim": {
+      "name": "trim",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005291,
+          "name": "trim",
+          "dependency": "trim",
+          "title": "Regular Expression Denial of Service in trim",
+          "url": "https://github.com/advisories/GHSA-w5p7-h5w8-2hfq",
+          "severity": "high",
+          "range": "<0.0.3"
+        }
+      ],
+      "effects": [
+        "remark-parse"
+      ],
+      "range": "<0.0.3",
+      "nodes": [
+        "node_modules/trim"
+      ],
+      "fixAvailable": {
+        "name": "gatsby-plugin-postcss",
+        "version": "3.7.0",
+        "isSemVerMajor": true
+      }
+    },
+    "ws": {
+      "name": "ws",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1005162,
+          "name": "ws",
+          "dependency": "ws",
+          "title": "ReDoS in Sec-Websocket-Protocol header",
+          "url": "https://github.com/advisories/GHSA-6fc8-4gx4-v693",
+          "severity": "moderate",
+          "range": ">=7.0.0 <7.4.6"
+        }
+      ],
+      "effects": [
+        "@graphql-tools/url-loader"
+      ],
+      "range": "7.0.0 - 7.4.5",
+      "nodes": [
+        "node_modules/ws"
+      ],
+      "fixAvailable": true
+    },
+    "yurnalist": {
+      "name": "yurnalist",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "strip-ansi"
+      ],
+      "effects": [],
+      "range": ">=1.0.5",
+      "nodes": [
+        "node_modules/yurnalist"
+      ],
+      "fixAvailable": true
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 3,
+      "moderate": 12,
+      "high": 30,
+      "critical": 2,
+      "total": 47
+    },
+    "dependencies": {
+      "prod": 1904,
+      "dev": 57,
+      "optional": 4,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 1964
+    }
+  }
+}

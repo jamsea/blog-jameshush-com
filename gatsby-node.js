@@ -1,11 +1,13 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const express = require(`express`)
+const cors = require(`cors`)
 
 // Serve files from `static` in development
 // Remove this when we migrate the old www.jameshush.com marketing
 // pages from static HTML to typescript in the static/ folder
 exports.onCreateDevServer = ({ app }) => {
+  app.use(cors())
   app.use(express.static("static"))
 }
 
