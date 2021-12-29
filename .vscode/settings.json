@@ -3,5 +3,9 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.enable": true
+  "stylelint.enable": true,
+  "stylelint.configFile": ".stylelintrc.json",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
 }
