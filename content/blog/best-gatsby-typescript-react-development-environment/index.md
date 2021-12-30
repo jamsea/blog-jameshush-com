@@ -13,6 +13,19 @@ hidden: false
 
 # Install linters per project
 
+# NVM and .nvmrc
+
+# Git diff tool
+
+```bash
+    git config --global merge.tool vscode
+    git config --global mergetool.vscode.cmd 'code --wait $MERGED'
+    git config --global diff.tool vscode
+    git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+```
+
+# Enable git rerere
+
 # Use the vscode folder
 
 - extensions.json
@@ -20,8 +33,6 @@ hidden: false
 - launch.json
 - tasks.json
 
-# NVM and .nvmrc
-
-# Install cool font
+# Bonus: Install cool font
 
 - https://github.com/tonsky/FiraCode/wiki
