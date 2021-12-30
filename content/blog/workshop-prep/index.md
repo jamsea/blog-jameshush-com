@@ -17,4 +17,3 @@ hidden: true
 # All Users
 
 1. Download [VS Code](https://code.visualstudio.com/)
-2. Download [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
