@@ -69,7 +69,7 @@
     "url": "git+https://github.com/jamsea/blog-jameshush-com.git"
   },
   "scripts": {
-    "build": "test && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop --https --host www.jameshush.localhost",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
