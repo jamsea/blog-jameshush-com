@@ -6,11 +6,12 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, PageProps } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { BioQuery } from "../../graphql-types"
 
-const Bio = () => {
-  const data = useStaticQuery(graphql`
+const Bio: React.FC<PageProps<BioQuery>> = () => {
+  const data = useStaticQuery<BioQuery>(graphql`
     query Bio {
       site {
         siteMetadata {
@@ -24,7 +25,7 @@ const Bio = () => {
   `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
+  const author = data?.site?.siteMetadata?.author || { name: "", summary: "" }
 
   return (
     <div className="bio">
