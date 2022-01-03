@@ -8,6 +8,7 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { SeoQuery } from "../../graphql-types"
 
 interface SEOProps {
   description?: string
@@ -22,9 +23,9 @@ const Seo = ({
   meta = [],
   title = "",
 }: SEOProps) => {
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<SeoQuery>(
     graphql`
-      query {
+      query SEO {
         site {
           siteMetadata {
             title
@@ -35,8 +36,8 @@ const Seo = ({
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title || ""
+  const metaDescription = description || site?.siteMetadata?.description || ""
+  const defaultTitle = site?.siteMetadata?.title || ""
 
   return (
     <Helmet
