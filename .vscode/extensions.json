@@ -1,0 +1,14 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "timonwong.shellcheck",
+    "GitHub.copilot",
+    "Orta.vscode-jest",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "GraphQL.vscode-graphql"
+  ]
+}
