@@ -2,7 +2,7 @@
 title: Setting up the ultimate Gatsby/Typescript/React Development Environment
 date: "2021-12-29T06:59:00.980Z"
 description: ""
-hidden: false
+hidden: true
 ---
 
 # Overview
@@ -115,6 +115,8 @@ npm install
 # Show GraphQL Example
 
 # Show prettier/css example
+
+# /etc/hosts explanation
 
 # Bonus: Install cool font
 
