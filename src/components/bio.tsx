@@ -6,11 +6,11 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql, PageProps } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { BioQuery } from "../../graphql-types"
 
-const Bio: React.FC<PageProps<BioQuery>> = () => {
+const Bio = () => {
   const data = useStaticQuery<BioQuery>(graphql`
     query Bio {
       site {
