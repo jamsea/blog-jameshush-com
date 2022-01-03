@@ -69,13 +69,13 @@
     "url": "git+https://github.com/jamsea/blog-jameshush-com.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "test && gatsby build",
     "develop": "gatsby develop --https --host www.jameshush.localhost",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "tsc && npm run stylelint-check && npm run lint:css",
     "stylelint-check": "stylelint-config-prettier-check",
     "lint:css": "stylelint \"src/**/*.css\"",
     "build:graphql": "graphql-codegen"
