@@ -29,7 +29,7 @@ const NotFoundPage = ({ data, location }: NotFoundPageProps) => {
 export default NotFoundPage
 
 export const pageQuery = graphql`
-  query {
+  query NotFound {
     site {
       siteMetadata {
         title

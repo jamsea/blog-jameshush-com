@@ -1,36 +1,13 @@
 import * as React from "react"
 import { Link, PageProps, graphql } from "gatsby"
+import { BlogIndexQuery } from "../../graphql-types"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-type PageQueryData = {
-  site: {
-    siteMetadata: {
-      title?: string
-    }
-  }
-  allMarkdownRemark: {
-    nodes: {
-      excerpt: string
-      frontmatter: {
-        date: string
-        title: string
-        description?: string
-        excerpt?: string
-      }
-      fields: {
-        slug: string
-      }
-    }[]
-  }
-}
-
-type IndexPageProps = PageProps<PageQueryData>
-
-const BlogIndex = ({ data, location }: IndexPageProps) => {
-  const siteTitle = data.site.siteMetadata?.title || ""
+const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
+  const siteTitle = data?.site?.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
@@ -53,10 +30,14 @@ const BlogIndex = ({ data, location }: IndexPageProps) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const date = post.frontmatter?.date
+          const description =
+            post.frontmatter?.description || post.excerpt || ""
+          const slug = post?.fields?.slug || "/"
+          const title = post?.frontmatter?.title || slug
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post?.fields?.slug}>
               <article
                 className="post-list-item"
                 itemScope
@@ -64,16 +45,16 @@ const BlogIndex = ({ data, location }: IndexPageProps) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link to={slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>{date}</small>
                 </header>
                 <section>
                   <p
                     dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
+                      __html: description,
                     }}
                     itemProp="description"
                   />
@@ -90,7 +71,7 @@ const BlogIndex = ({ data, location }: IndexPageProps) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndex {
     site {
       siteMetadata {
         title
