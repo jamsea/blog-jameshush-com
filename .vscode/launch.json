@@ -23,17 +23,17 @@
       "console": "integratedTerminal"
     },
     {
-      "type": "chrome",
-      "request": "launch",
       "name": "Client side in Chrome",
+      "request": "launch",
+      "type": "chrome",
       "url": "https://www.jameshush.localhost:8000",
       "webRoot": "${workspaceFolder}/gatsby"
     },
     {
-      "name": "Client side in Firefox",
-      "type": "firefox",
-      "request": "launch",
       "console": "integratedTerminal",
+      "name": "Client side in Firefox",
+      "request": "launch",
+      "type": "firefox",
       "url": "https://www.jameshush.localhost:8000"
     }
   ]
