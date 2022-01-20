@@ -3,7 +3,11 @@
   "private": true,
   "description": "James Hush's website",
   "version": "0.1.0",
-  "author": "James Hush <hello@jameshush.com>",
+  "author": "James Hush <hello@jameshush.com> (https://www.jameshush.com)",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "bugs": {
     "url": "https://github.com/jamsea/blog-jameshush-com/issues"
   },
