@@ -5,13 +5,9 @@ description: ""
 hidden: true
 ---
 
-# <<<<<<< HEAD
-
 # TODO
 
 - fix vs code launch scripts (SSL errors)
-
-> > > > > > > 21cbd57 (Add more content)
 
 # Outline
 
@@ -36,11 +32,8 @@ hidden: true
 
 # Mac Users
 
-<<<<<<< HEAD
-
 1. # Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 1. Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Pro tip: open up a terminal and type "git" to automatically install the command line tools on macOS without installing all of Xcode.
-   > > > > > > > 21cbd57 (Add more content)
 1. Download [Homebrew](https://brew.sh/)
 
 # Windows Users
@@ -80,8 +73,6 @@ Then follow the directions here: https://ohmyz.sh/#install
 code ~/.zshrc
 ```
 
-# <<<<<<< HEAD
-
 Afterwards, save and close and type
 
 ```bash
@@ -89,8 +80,6 @@ source ~/.zshrc
 ```
 
 to have the settings apply.
-
-> > > > > > > 21cbd57 (Add more content)
 
 ## Why use nvm?
 
