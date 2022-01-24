@@ -1,5 +1,5 @@
 ---
-title: Setting up the ultimate Gatsby/Typescript/React Development Environment
+title: Setting up a modern web development environment in 2022
 date: "2021-12-29T06:59:00.980Z"
 description: ""
 hidden: true
@@ -86,25 +86,6 @@ to have the settings apply.
 - Different projects commonly have different versions of NodeJS.
 - Locking versions for everything is a common practice in order to guarantee reproducible builds. Reproducible builds mean that you can rebuild a project from any time in history, essential for _any_ production project.
 
-# Git diff tool
-
-```bash
-git config --global merge.tool vscode
-git config --global mergetool.vscode.cmd 'code --wait $MERGED'
-git config --global diff.tool vscode
-git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
-```
-
-# Enable git rerere
-
-```bash
-git config --global rerere.enabled true
-```
-
-- reuse recorded resolution.
-- makes rebasing and fixing merge conflicts _much_ easier because you don't have to reapply the same resolution over and over
-- More information [here](https://stackoverflow.com/questions/49500943/what-is-git-rerere-and-how-does-it-work)
-
 # Clone this blog
 
 - Open integrated terminal (command + shift + P "Terminal: Create new terminal")
@@ -132,11 +113,35 @@ npm install
 # Install linters per project
 
 - Avoid global installations
+
   - Makes sharing configuration with team members impossible
   - Can cause you to have conflicts in other projects
   - Can cause issues in CI/CD setups
 
-# Bonus: Install cool font
+# Bonus setups
+
+These are quality of life improvements, that also double as a 1337 flex for your coworkers.
+
+# Git diff tool
+
+```bash
+git config --global merge.tool vscode
+git config --global mergetool.vscode.cmd 'code --wait $MERGED'
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
+```
+
+# Enable git rerere
+
+```bash
+git config --global rerere.enabled true
+```
+
+- reuse recorded resolution.
+- makes rebasing and fixing merge conflicts _much_ easier because you don't have to reapply the same resolution over and over
+- More information [here](https://stackoverflow.com/questions/49500943/what-is-git-rerere-and-how-does-it-work)
+
+# Install cool font
 
 - If you _really_ want to impress your date, install the FiraCode font.
 - https://github.com/tonsky/FiraCode/wiki
