@@ -1,7 +1,7 @@
 ---
 title: Setting up a modern web development environment in 2022
 date: "2021-12-29T06:59:00.980Z"
-description: "Notes for my modern development workshop"
+description: "Notes from my modern development workshop."
 hidden: false
 ---
 
@@ -11,26 +11,6 @@ hidden: false
 2. Clone an actual world project (my website) and get it running.
 3. Explain the same sane default settings for any modern web project for VS Code.
 4. Answer any development environment questions.
-
-# Demo
-
-- Show Typescript tsx example
-- Show GraphQL example
-- Show prettier
-- Show stylelint
-
-# vscode folder explanation
-
-- extensions.json
-  - Has a list of all recommended extensions
-- settings.json
-  - Getting extensions to play together nicely is more challenging than it looks. This file allows you to share the _settings_ that allow extensions to work. This is a huge help for teams. A great example here is stylelint and vs code's built in css validator collide with each other.
-- launch.json
-  - Added commands to make debugging in vs code easier
-- tasks.json
-  - Sets the default build and test tasks
-  - Default build task: command + shift + b
-  - Default test task: command + r, t
 
 # Mac Users
 
@@ -44,6 +24,27 @@ hidden: false
 # All Users
 
 1. Download [VS Code](https://code.visualstudio.com/)
+
+# Demo
+
+## vscode folder explanation
+
+- extensions.json
+  - Has a list of all recommended extensions
+- settings.json
+  - Getting extensions to play together nicely is more challenging than it looks. This file allows you to share the _settings_ that allow extensions to work. This is a huge help for teams. A great example here is stylelint and vs code's built in css validator collide with each other.
+- launch.json
+  - Added commands to make debugging in vs code easier
+- tasks.json
+
+  - Sets the default build and test tasks
+  - Default build task: command + shift + b
+  - Default test task: command + r, t
+
+- Show Typescript tsx example
+- Show GraphQL example
+- Show prettier
+- Show stylelint
 
 # Install code shell command
 
