@@ -5,6 +5,8 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.packageManager": "npm",
+  "graphql-config.load.filePath": "graphql.config.js",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   }
