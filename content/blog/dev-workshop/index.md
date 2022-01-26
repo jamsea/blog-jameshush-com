@@ -1,27 +1,9 @@
 ---
 title: Setting up a modern web development environment in 2022
 date: "2021-12-29T06:59:00.980Z"
-description: ""
-hidden: true
+description: "Notes for my modern development workshop"
+hidden: false
 ---
-
-# TODO
-
-- fix vs code launch scripts (SSL errors)
-
-# Outline
-
-- James intro
-  - NFL, HowStuffWorks, Remo, MapQuest, Startpage, Info.com
-  - Responsible for developer experience at NFL and System1
-  - Had a revolving door of agencies and contractors so we had to make sure people could get up to speed as quickly as possible.
-  - Text editor and development environment nerd
-  - Goal is to get a modern JavaScript project running on your machine
-- Demo
-  - Show Typescript tsx example
-  - Show GraphQL Example
-  - Show prettier/css example
-- Next part
 
 # Overview
 
@@ -30,9 +12,28 @@ hidden: true
 3. Explain the same sane default settings for any modern web project for VS Code.
 4. Answer any development environment questions.
 
+# Demo
+
+- Show Typescript tsx example
+- Show GraphQL example
+- Show prettier
+- Show stylelint
+
+# vscode folder explanation
+
+- extensions.json
+  - Has a list of all recommended extensions
+- settings.json
+  - Getting extensions to play together nicely is more challenging than it looks. This file allows you to share the _settings_ that allow extensions to work. This is a huge help for teams. A great example here is stylelint and vs code's built in css validator collide with each other.
+- launch.json
+  - Added commands to make debugging in vs code easier
+- tasks.json
+  - Sets the default build and test tasks
+  - Default build task: command + shift + b
+  - Default test task: command + r, t
+
 # Mac Users
 
-1. # Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 1. Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Pro tip: open up a terminal and type "git" to automatically install the command line tools on macOS without installing all of Xcode.
 1. Download [Homebrew](https://brew.sh/)
 
@@ -97,26 +98,11 @@ code .
 npm install
 ```
 
-# Use the vscode folder
+# Avoid installing linters globally
 
-- extensions.json
-  - Has a list of all recommended extensions
-- settings.json
-  - Getting extensions to play together nicely is more challenging than it looks. This file allows you to share the _settings_ that allow extensions to work. This is a huge help for teams. A great example here is stylelint and vs code's built in css validator collide with each other.
-- launch.json
-  - Added commands to make debugging in vs code easier
-- tasks.json
-  - sets the default build and test tasks
-  - default build task: command + shift + b
-  - default test task: command + r, t
-
-# Install linters per project
-
-- Avoid global installations
-
-  - Makes sharing configuration with team members impossible
-  - Can cause you to have conflicts in other projects
-  - Can cause issues in CI/CD setups
+- Makes sharing configuration with team members impossible
+- Can cause you to have conflicts in other projects
+- Can cause issues in CI/CD setups
 
 # Bonus setups
 
