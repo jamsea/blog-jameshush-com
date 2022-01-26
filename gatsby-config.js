@@ -67,7 +67,16 @@ module.exports = {
               token: process.env.GITHUB_TOKEN,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              prompt: {
+                user: "james",
+                host: "localhost",
+                global: true,
+              },
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],

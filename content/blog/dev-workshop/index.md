@@ -50,7 +50,7 @@ hidden: false
 
 - command + shift + p "shell command" select "install code command in path"
 
-# Install zsh and oh my zsh
+# Install zsh and oh my zsh (macOS)
 
 ```bash
 brew install zsh
@@ -64,9 +64,9 @@ Then follow the directions here: https://ohmyz.sh/#install
 
 1. Open VS Code
 2. Press command + shift + P (macOS) or CTRL+Shift+P (Windows/Linux) and search for terminal "Terminal: Select Default Profile".
-3. Select "zsh"
+3. Select "zsh" (on macOS) or "git bash" (on Windows)
 
-# Install nvm
+# Install nvm (macOS)
 
 - https://github.com/nvm-sh/nvm#installing-and-updating
 - Add auto switch script https://github.com/nvm-sh/nvm#zsh
@@ -82,6 +82,17 @@ source ~/.zshrc
 ```
 
 to have the settings apply.
+
+# Install nvm (Windows)
+
+Go to https://github.com/coreybutler/nvm-windows
+Type:
+
+```bash
+nvm install 16.13.1
+```
+
+To install the correct version on Windows
 
 ## Why use nvm?
 
@@ -104,6 +115,14 @@ npm install
 ```bash
 sudo code /etc/hosts
 ```
+
+or windows
+
+```powershell
+code %SystemRoot%\System32\drivers\etc\hosts
+```
+
+https://petri.com/easily-edit-the-hosts-file-in-windows-11
 
 And paste the following at the bottom:
 
