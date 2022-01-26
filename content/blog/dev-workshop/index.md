@@ -99,6 +99,21 @@ code .
 npm install
 ```
 
+# Add www.jameshush.localhost to /etc/hosts
+
+```bash
+sudo code /etc/hosts
+```
+
+And paste the following at the bottom:
+
+```
+127.0.0.1 www.jameshush.localhost
+::1 www.jameshush.localhost
+```
+
+Finally, run the site by typing `npm start`
+
 # Avoid installing linters globally
 
 - Makes sharing configuration with team members impossible
