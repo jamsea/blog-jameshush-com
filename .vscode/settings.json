@@ -1,5 +1,16 @@
 {
-  "cSpell.words": ["howstuffworks", "triaging"],
+  "cSpell.words": [
+    "autoload",
+    "chpwd",
+    "chsh",
+    "difftool",
+    "Fira",
+    "howstuffworks",
+    "mergetool",
+    "rerere",
+    "stylelint",
+    "triaging"
+  ],
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,

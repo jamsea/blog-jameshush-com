@@ -1,29 +1,16 @@
 ---
 title: Setting up a modern web development environment in 2022
 date: "2021-12-29T06:59:00.980Z"
-description: "Notes from my modern development workshop."
+description: "Notes from my modern development environment workshop."
 hidden: false
 ---
 
 # Overview
 
 1. We're going to download and install any essential tools.
-2. Clone an actual world project (my website) and get it running.
-3. Explain the same sane default settings for any modern web project for VS Code.
+2. Clone an actual real world project (my website) and get it running.
+3. Explain the some sane default settings for any modern web project for VS Code.
 4. Answer any development environment questions.
-
-# Mac Users
-
-1. Download [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Pro tip: open up a terminal and type "git" to automatically install the command line tools on macOS without installing all of Xcode.
-1. Download [Homebrew](https://brew.sh/)
-
-# Windows Users
-
-1. Download [git for windows](https://gitforwindows.org/)
-
-# All Users
-
-1. Download [VS Code](https://code.visualstudio.com/)
 
 # Demo
 
@@ -41,10 +28,24 @@ hidden: false
   - Default build task: command + shift + b
   - Default test task: command + r, t
 
+- Start project
 - Show Typescript tsx example
 - Show GraphQL example
 - Show prettier
 - Show stylelint
+
+# Mac Users
+
+1. Open up a terminal and type "git" to automatically install the command line tools on macOS without installing all of Xcode. Or download [the full version of Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
+1. Download [Homebrew](https://brew.sh/).
+
+# Windows Users
+
+1. Download [git for windows](https://gitforwindows.org/)
+
+# All Users
+
+1. Download [VS Code](https://code.visualstudio.com/)
 
 # Install code shell command
 
@@ -60,7 +61,7 @@ chsh -s $(which zsh)
 
 Then follow the directions here: https://ohmyz.sh/#install
 
-# Set default shell to zsh in vs code
+# Set default shell to zsh or git bash in vs code
 
 1. Open VS Code
 2. Press command + shift + P (macOS) or CTRL+Shift+P (Windows/Linux) and search for terminal "Terminal: Select Default Profile".
@@ -68,11 +69,37 @@ Then follow the directions here: https://ohmyz.sh/#install
 
 # Install nvm (macOS)
 
-- https://github.com/nvm-sh/nvm#installing-and-updating
-- Add auto switch script https://github.com/nvm-sh/nvm#zsh
+- Go to https://github.com/nvm-sh/nvm#installing-and-updating
+- To add the auto-switch script, open up you zshrc file:
 
 ```bash
 code ~/.zshrc
+```
+
+and add the following to the bottom of the file:
+
+```bash
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 ```
 
 Afterwards, save and close and type
@@ -85,14 +112,14 @@ to have the settings apply.
 
 # Install nvm (Windows)
 
-Go to https://github.com/coreybutler/nvm-windows
-Type:
+Download and install nvm for Windows here: https://github.com/coreybutler/nvm-windows/releases/.
+After it's installed type:
 
 ```bash
 nvm install 16.13.1
 ```
 
-To install the correct version on Windows
+To install the correct version of nvm.
 
 ## Why use nvm?
 
