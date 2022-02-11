@@ -1,7 +1,7 @@
 ---
 title: The story of GEAR GODS with Trey Xavier
 date: "2022-02-11"
-description: ""
+description: "California-based guitar blogger, Trey Xavier, is the man behind the Gear Gods channel on YouTube, delivering metal-centric content to a horde of virtual metal heads."
 hidden: false
 ---
 
