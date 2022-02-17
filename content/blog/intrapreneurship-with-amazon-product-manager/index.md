@@ -1,12 +1,12 @@
 ---
-title: Building and leading remote engineering teams with David Guttman
-date: "2022-03-04"
-description: "David started Superstruct to build a repeatable system for finding, recruiting, vetting, onboarding, and managing talented software engineers."
+title: Intrapreneurship with Lenworth Gordon, Product Manager at Amazon
+date: "2022-02-18"
+description: "Lenworth is a product leader with 15+ years of experience leading global product and innovation teams to develop all new verticals that dynamically advance business growth."
 hidden: true
 ---
 
-`youtube:https://www.youtube.com/embed/3JrnknO4kGM`
+`youtube:https://www.youtube.com/watch?v=0XGWBArP09o`
 
-David started Superstruct to build a repeatable system for finding, recruiting, vetting, onboarding, and managing talented software engineers. This system integrates over 10 years of software engineering management experience with deep technical knowledge to help companies clear milestones faster, cheaper, and with less risk.
+Today we have Lenworth Gordon Senior Technical Product Manager at Amazon.
 
-David has led teams of engineers to ship projects like ultra-high-scale ad servers handling over 10 billion requests per day, online learning systems, white-label performance marketing SAAS platforms, and Project Matterhorn, the system that would eventually become [Disney.com](http://disney.com/).
+Lenworth is a product leader with 15+ years of experience leading global product and innovation teams to develop all new verticals that dynamically advance business growth. A Verizon alum who led negotiations with Google to become the exclusive launch partner for Google’s Chromebook and Chrome OS, Lenworth designs product strategy, trials, launch plans, pricing, and commercial deployment across every initiative. Today, he is a leader and educator at Amazon and the Product School, guiding multidisciplinary teams and all stakeholders to motivate quick expansion of goals, solution through challenges, and transform product paradigms for global utilization and maximum customer success.
