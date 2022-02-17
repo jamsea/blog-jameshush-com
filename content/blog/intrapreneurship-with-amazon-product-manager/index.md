@@ -2,7 +2,7 @@
 title: Intrapreneurship with Lenworth Gordon, Product Manager at Amazon
 date: "2022-02-18"
 description: "Lenworth is a product leader with 15+ years of experience leading global product and innovation teams to develop all new verticals that dynamically advance business growth."
-hidden: true
+hidden: false
 ---
 
 `youtube:https://www.youtube.com/watch?v=0XGWBArP09o`
