@@ -5,7 +5,7 @@ description: "Lenworth is a product leader with 15+ years of experience leading 
 hidden: false
 ---
 
-`youtube:https://www.youtube.com/watch?v=0XGWBArP09o`
+`youtube:https://www.youtube.com/embed/0XGWBArP09o`
 
 Today we have Lenworth Gordon Senior Technical Product Manager at Amazon.
 
