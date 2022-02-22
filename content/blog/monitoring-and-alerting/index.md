@@ -11,7 +11,7 @@ Let me repeat.
 
 Users should _never_ report an issue before the business knows about it.
 
-I've said this in front of engineering teams
+I've said this in front of engineering teams.
 How is this possible?
 
 # Metrics every piece of software should be monitoring
@@ -22,7 +22,7 @@ How is this possible?
 
 Uptime should be table stakes for any project, but I'm still surprised how many companies aren't even checking their site loads.
 
-The biggest culprits are the marketing pages. Oftentimes marketing websites are separate from the main product's website with their own team of engineers or an outside agency. I once walked by a business analyst frantically trying to bring the home page up after accidentally crashing it with a WordPress plugin. After that incident, we set up a monitoring tool to check the home page every few minutes to make sure it was up and running and alert the engineering team if there was an issue.
+The biggest culprits are the marketing pages. Oftentimes, marketing websites are separate from the main product's website with, their own team of engineers or an outside agency. I once walked by a business analyst frantically trying to bring the home page up after accidentally crashing it with a WordPress plugin. After that incident, we set up a monitoring tool to check the home page every few minutes to make sure it was up and running, and alert the engineering team if there was an issue.
 
 If your website is visited by people in different countries, remember to monitor it's uptime in every region you have customers. It's common to have an outage happen in just one region (e.g. in Europe but not in Asia). The last thing you want is a call from an angry customer in another part of the world telling you about an issue you can't recreate in your part of the world.
 
@@ -44,7 +44,7 @@ Every application is unique and has it's own custom business metrics that should
 
 > Does someone know when it's broken?
 
-If there's no alert, there will be no fix. I've seen well-intentioned teams set up monitoring, only to point all alerts to an unchecked Slack channel. To solve this, I always funnel _every_ error message to an on-call rotation and make it clear whoever is on-call is responsible for triaging every error and escalating if they're unsure how to fix it. Not only does this mean noisy, false-negative error messages get cleaned up, but it solves the responsibility problem.
+If there's no alert, there will be no fix. I've seen well-intentioned teams set up monitoring, only to funnel all alerts to an unchecked Slack channel. To solve this, I always funnel _every_ error message to an on-call rotation and make it clear whoever is on-call is responsible for triaging every error and escalating if they're unsure how to fix it. Not only does this mean noisy, false-negative error messages get cleaned up, but it solves the responsibility problem.
 
 > When everyone is responsible for something, no one is responsible for it.
 
