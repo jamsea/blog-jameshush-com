@@ -28,7 +28,7 @@ const Bio = () => {
   const author = data?.site?.siteMetadata?.author || { name: "", summary: "" }
 
   return (
-    <div className="bio">
+    <div className="bio pt-4">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
