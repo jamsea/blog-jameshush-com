@@ -1,6 +1,6 @@
 ---
 title: Building and leading remote engineering teams with David Guttman
-date: "2022-03-04"
+date: "2022-02-24"
 description: "David started Superstruct to build a repeatable system for finding, recruiting, vetting, onboarding, and managing talented software engineers."
 hidden: false
 ---
