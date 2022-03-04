@@ -5,7 +5,7 @@ description: "David started Superstruct to build a repeatable system for finding
 hidden: false
 ---
 
-`youtube:https://www.youtube.com/embed/3JrnknO4kGM`
+`youtube:https://www.youtube.com/watch?v=T826Z8cORZs`
 
 Alexander Krasnov is the school director at LTL Language School, a private school chain teaching Chinese and other Asian languages including Korean, Japanese, and Vietnamese in several locations in Asia, as well as Online through its Flexi Classes platform.
 
