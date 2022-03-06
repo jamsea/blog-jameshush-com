@@ -1,8 +1,8 @@
 ---
-title: Building and leading remote engineering teams with David Guttman
+title: Creating websites for marketers
 date: "2022-03-10"
 description: ""
-hidden: true
+hidden: false
 ---
 
 # Create accounts
