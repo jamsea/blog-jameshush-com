@@ -1,7 +1,7 @@
 ---
 title: Website monitoring for marketers workshop notes
 date: "2022-03-10"
-description: ""
+description: "Today we're creating a marketing page similar to https://signup.zoeymandarinchinese.com and connecting [Google Analytics](https://analytics.google.com) to track users."
 hidden: false
 ---
 
