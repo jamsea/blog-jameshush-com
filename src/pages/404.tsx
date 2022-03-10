@@ -14,11 +14,12 @@ const NotFoundPage: React.FC<PageProps<NotFoundQuery>> = ({
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>
-        {" "}
-        <Link to="/blog">Go back to blog</Link>{" "}
-      </p>
+      <article className="prose prose-james lg:prose-xl">
+        <h1>404: Not Found</h1>
+        <p>
+          <Link to="/blog">Go back to blog</Link>
+        </p>
+      </article>
     </Layout>
   )
 }

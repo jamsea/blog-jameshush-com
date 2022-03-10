@@ -15,7 +15,7 @@
     "@graphql-codegen/cli": "^2.6.2",
     "@graphql-codegen/typescript": "^2.4.5",
     "@graphql-codegen/typescript-operations": "^2.3.2",
-    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.0",
     "gatsby": "^4.7.2",
@@ -47,7 +47,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "remark-github-plugin": "^1.4.0",
-    "tailwindcss": "^3.0.7"
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.3",
