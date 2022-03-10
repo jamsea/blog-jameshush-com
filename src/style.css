@@ -303,7 +303,7 @@ table thead tr th {
   border-radius: 100%;
 }
 
-.blog-post header h1 {
+/* .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 
@@ -313,7 +313,7 @@ table thead tr th {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
-}
+} */
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
