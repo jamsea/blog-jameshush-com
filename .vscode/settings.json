@@ -20,5 +20,6 @@
   "graphql-config.load.filePath": "graphql.config.js",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "jest.jestCommandLine": "npm run test --"
 }

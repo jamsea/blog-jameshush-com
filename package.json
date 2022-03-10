@@ -87,6 +87,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "test:unit": "jest",
     "test": "tsc && npm run stylelint-check && npm run lint:css && jest",
     "stylelint-check": "stylelint-config-prettier-check",
     "lint:css": "stylelint \"src/**/*.css\"",
