@@ -28,44 +28,46 @@ const BlogIndex: React.FC<PageProps<BlogIndexQuery>> = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts
-          .filter(post => Date.parse(post.frontmatter?.date) < Date.now())
-          .map(post => {
-            const date = post.frontmatter?.date
-            const description =
-              post.frontmatter?.description || post.excerpt || ""
-            const slug = post?.fields?.slug || "/"
-            const title = post?.frontmatter?.title || slug
+      <article>
+        <ul>
+          {posts
+            .filter(post => Date.parse(post.frontmatter?.date) < Date.now())
+            .map(post => {
+              const date = post.frontmatter?.date
+              const description =
+                post.frontmatter?.description || post.excerpt || ""
+              const slug = post?.fields?.slug || "/"
+              const title = post?.frontmatter?.title || slug
 
-            return (
-              <li key={post?.fields?.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <Link to={slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: description,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
-              </li>
-            )
-          })}
-      </ol>
+              return (
+                <li key={post?.fields?.slug}>
+                  <article
+                    className="post-list-item"
+                    itemScope
+                    itemType="http://schema.org/Article"
+                  >
+                    <header>
+                      <h2 className="text-gold transition ease-in-out delay-400 hover:text-red">
+                        <Link to={slug} itemProp="url">
+                          <span itemProp="headline">{title}</span>
+                        </Link>
+                      </h2>
+                      <small>{date}</small>
+                    </header>
+                    <section>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: description,
+                        }}
+                        itemProp="description"
+                      />
+                    </section>
+                  </article>
+                </li>
+              )
+            })}
+        </ul>
+      </article>
     </Layout>
   )
 }
