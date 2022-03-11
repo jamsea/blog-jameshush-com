@@ -7,7 +7,7 @@ hidden: false
 
 `youtube:https://www.youtube.com/embed/ceeSPZb64Zw`
 
-Today we have Isaac Stolzer-Gary, artist relations, social media manager, and content creator at .strandberg\* Guitars. He’s also guitarist for The World Is Quiet Here, runs the YouTube channel Riffified, and freelance video editor for brands like Gear Gods, Guitar Messenger, and Spectre Sound Studios.
+Today we have Isaac Stolzer-Gary, artist relations, social media manager, and content creator at .strandberg\* Guitars. He’s also the guitarist for The World Is Quiet Here, runs the YouTube channel Riffified, and freelance video editor for brands like Gear Gods, Guitar Messenger, and Spectre Sound Studios.
 
 # About Isaac Stolzer-Gary
 
