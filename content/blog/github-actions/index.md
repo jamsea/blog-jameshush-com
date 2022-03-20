@@ -23,7 +23,7 @@ hidden: false
 
 ## Clone example repo
 
-- ADD LINK TO REPO HERE
+- https://github.com/jamsea/intro-to-github-actions/
 
 ## Setup github pages
 
