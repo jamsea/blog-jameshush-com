@@ -24,6 +24,7 @@ hidden: false
 ## Clone example repo
 
 - https://github.com/jamsea/intro-to-github-actions/
+- Click fork on the top right corner
 
 ## Setup github pages
 
@@ -95,13 +96,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
       - name: Install test and build
         run: |
           npm install-ci-test
           npm run build
-      - name: Deploy 🚀
+      - name: Release 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           BRANCH: gh-pages
