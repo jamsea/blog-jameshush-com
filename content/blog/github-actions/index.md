@@ -8,6 +8,7 @@ hidden: false
 # Goal
 
 - Show how to set hooks up for PR jobs and release jobs
+- End result will be a page like this: https://jamsea.github.io/intro-to-github-actions/
 
 # Background
 
