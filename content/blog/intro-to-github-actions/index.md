@@ -15,9 +15,9 @@ Sounds pretty silly. You'd have 1000 people running around, nobody knowing quite
 
 Henry Ford figured this out years ago. Automating what makes sense to automate, and giving people clear responsibilities is the difference between shipping _every_ day and _never_ shipping. Today we're going to look at how we can automate deployments with GitHub actions. Automating deployments is a great way to not only make delivering new features faster and safer, but also allows us to _free up_ engineering time and spend it on even more proactive tasks.
 
-Now, in the past, setting up this flow was a bit tricky. Self-hosting Jenkins and setting up your own test runners has enough of a learning curve that it's scary for a new engineer to dive into. Nowadays we have GitHub Actions. GitHub Actions are the robots in our software factory. Instead of painting cars and welding bolts though, they allow us to automatically run jobs when pull requests are opened, code is merged, issues are opened, etc. Any event that happens in GitHub has a hook that allows one of our actions to run.
+Today I'm going to show you how to use GitHub Actions to release our software for us on every merge to `main`. We'll be focusing on the operations (aka "Ops") side today and not on the application code, so we'll be releasing an already made React app. The final result will be a page that looks like this: https://jamsea.github.io/intro-to-github-actions/.
 
-Today we're going to show how to setup a GitHub Action that will release our software for us on every merge to `main`. We'll be focusing on the operations (aka "Ops") side today and not on the application code, so we'll be releasing an already made React app. The final result will be a page that looks like this: https://jamsea.github.io/intro-to-github-actions/.
+Now, in the past, setting up this flow was a bit tricky. Self-hosting Jenkins and setting up our own test runners has enough of a learning curve that it's scary for a new engineer to dive into. Nowadays we have GitHub Actions. GitHub Actions are the robots in our software factory. Instead of painting cars and welding bolts though, they allow us to automatically run jobs when pull requests are opened, code is merged, issues are opened, etc. Any event that happens in GitHub has a hook that allows an action to run.
 
 # Workshop Directions
 
@@ -38,6 +38,13 @@ Today we're going to show how to setup a GitHub Action that will release our sof
 ## Create GitHub Action
 
 - Hit the `.` button on your keyboard or change `github.com/YOUR_NAME_HERE` to `github.dev/YOUR_NAME_HERE` in the address bar to open up the code editor.
+- Open `package.json` and change the homepage URL on line 5 to your GitHub username.
+
+```diff
+-   "homepage": "https://YOUR_USERNAME_HERE.github.io/intro-to-github-actions",
++   "homepage": "https://jamsea.github.io/intro-to-github-actions", # Use your GitHub username
+```
+
 - Create a `.github/workflow/ci.yml` file and paste the following in it:
 
 ```yml
