@@ -1,7 +1,7 @@
 ---
 title: Github Actions
 date: "2022-03-24"
-description: ""
+description: "Imagine building a car without a car factory."
 hidden: false
 ---
 
