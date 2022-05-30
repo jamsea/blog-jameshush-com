@@ -89,7 +89,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --https --host www.jameshush.localhost",
+    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -99,10 +99,5 @@
     "stylelint-check": "stylelint-config-prettier-check",
     "lint:css": "stylelint \"src/**/*.css\"",
     "build:graphql": "graphql-codegen"
-  },
-  "overrides": {
-    "gatsby": {
-      "devcert": "1.2.0"
-    }
   }
 }
