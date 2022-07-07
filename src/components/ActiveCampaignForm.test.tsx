@@ -29,12 +29,12 @@ it("renders correctly", () => {
         <input
           name="u"
           type="hidden"
-          value={3}
+          value="3"
         />
         <input
           name="f"
           type="hidden"
-          value={3}
+          value="3"
         />
         <input
           name="s"

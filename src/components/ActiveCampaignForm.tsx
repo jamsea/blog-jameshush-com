@@ -55,8 +55,8 @@ export default function ActiveCampaignForm({
         className="bg-gold flex items-center flex-col"
         onSubmit={e => handleSubmit(e)}
       >
-        <input type="hidden" name="u" value={formId} />
-        <input type="hidden" name="f" value={formId} />
+        <input type="hidden" name="u" value={formId.toString()} />
+        <input type="hidden" name="f" value={formId.toString()} />
         <input type="hidden" name="s" />
         <input type="hidden" name="c" value="0" />
         <input type="hidden" name="m" value="0" />
