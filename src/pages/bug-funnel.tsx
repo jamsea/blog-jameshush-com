@@ -13,7 +13,7 @@ const BugFunnel = ({ location }: BugFunnelProps) => {
     <Layout location={location} title={"bug funnel"}>
       <article className="prose prose-james lg:prose-xl">
         <ActiveCampaignForm
-          showCopy={false}
+          showCopy={true}
           formId={3}
           or="b37539ce92982cb5dd3e61c4973e8250"
         />

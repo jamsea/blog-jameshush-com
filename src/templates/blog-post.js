@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
         <footer>
           <ActiveCampaignForm
-            showCopy={false}
+            showCopy={true}
             formId={3}
             or="b37539ce92982cb5dd3e61c4973e8250"
           />
