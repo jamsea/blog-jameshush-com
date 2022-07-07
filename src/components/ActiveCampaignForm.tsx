@@ -1,6 +1,30 @@
 import React, { useState } from "react"
 
-export default function ActiveCampaignForm() {
+const DefaultCopy = () => {
+  return (
+    <>
+      <h1 className="font-sofia-pro">
+        Want to ship more high-quality features faster?
+      </h1>
+      <p>
+        Sign up for my free five week course to get your team shipping changes
+        daily!
+      </p>
+    </>
+  )
+}
+
+type ActiveCampaignFormProps = {
+  showCopy: boolean
+  formId: number
+  or: string
+}
+
+export default function ActiveCampaignForm({
+  showCopy = true,
+  formId = 3,
+  or = "b37539ce92982cb5dd3e61c4973e8250",
+}: ActiveCampaignFormProps) {
   const [formSubmitted, setFormSubmitted] = useState(false)
 
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = event => {
@@ -26,29 +50,20 @@ export default function ActiveCampaignForm() {
     <h1>Thank you for signing up!</h1>
   ) : (
     <>
-      <h1 className="font-sofia-pro">
-        Want to ship more high-quality features faster?
-      </h1>
-      <p>
-        Sign up for my free five week course to get your team shipping changes
-        daily!
-      </p>
+      {showCopy ? <DefaultCopy /> : null}
       <form
         className="bg-gold flex items-center flex-col"
         onSubmit={e => handleSubmit(e)}
       >
-        <input type="hidden" name="u" value="3" />
-        <input type="hidden" name="f" value="3" />
+        <input type="hidden" name="u" value={formId} />
+        <input type="hidden" name="f" value={formId} />
         <input type="hidden" name="s" />
         <input type="hidden" name="c" value="0" />
         <input type="hidden" name="m" value="0" />
         <input type="hidden" name="act" value="sub" />
         <input type="hidden" name="v" value="2" />
-        <input
-          type="hidden"
-          name="or"
-          value="b37539ce92982cb5dd3e61c4973e8250"
-        />
+        <input type="hidden" name="or" value={or} />
+
         <div className="p-4 bg-gold font-sofia-pro font-black text-base w-full">
           <div className="mb-2">
             <label className="mb-2">First Name</label>
