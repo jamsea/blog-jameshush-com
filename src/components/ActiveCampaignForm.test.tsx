@@ -3,7 +3,15 @@ import renderer from "react-test-renderer"
 import ActiveCampaignForm from "./ActiveCampaignForm"
 
 it("renders correctly", () => {
-  const tree = renderer.create(<ActiveCampaignForm />).toJSON()
+  const tree = renderer
+    .create(
+      <ActiveCampaignForm
+        showCopy={true}
+        formId={3}
+        or="b37539ce92982cb5dd3e61c4973e8250"
+      />
+    )
+    .toJSON()
   expect(tree).toMatchInlineSnapshot(`
     Array [
       <h1

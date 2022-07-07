@@ -31,7 +31,11 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <ActiveCampaignForm />
+          <ActiveCampaignForm
+            showCopy={true}
+            formId={3}
+            or="b37539ce92982cb5dd3e61c4973e8250"
+          />
           <Bio />
         </footer>
       </article>
