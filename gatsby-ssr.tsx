@@ -1,4 +1,4 @@
-const React = require("react")
+import * as React from "react"
 
 // If anyone knows of a better way to do this, please make a pull request 🤷
 function renderActiveCampaignTracking() {
@@ -20,6 +20,6 @@ const postBodyComponents = [
   />,
 ]
 
-exports.onRenderBody = ({ setPostBodyComponents }) => {
+export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents(postBodyComponents)
 }
