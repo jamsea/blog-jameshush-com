@@ -66,7 +66,7 @@ it("renders correctly", () => {
           value="b37539ce92982cb5dd3e61c4973e8250"
         />
         <div
-          className="p-4 bg-gold font-sofia-pro font-black text-base w-full"
+          className="bg-gold font-sofia-pro font-black text-base w-full"
         >
           <div
             className="mb-2"
@@ -74,7 +74,7 @@ it("renders correctly", () => {
             <label
               className="mb-2"
             >
-              First Name
+              Name
             </label>
             <div>
               <input

@@ -64,9 +64,9 @@ export default function ActiveCampaignForm({
         <input type="hidden" name="v" value="2" />
         <input type="hidden" name="or" value={or} />
 
-        <div className="p-4 bg-gold font-sofia-pro font-black text-base w-full">
+        <div className="bg-gold font-sofia-pro font-black text-base w-full">
           <div className="mb-2">
-            <label className="mb-2">First Name</label>
+            <label className="mb-2">Name</label>
             <div>
               <input
                 className="w-full border-navy border-2"
