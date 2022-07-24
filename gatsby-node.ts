@@ -1,7 +1,9 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
-const express = require(`express`)
-const cors = require(`cors`)
+import type { GatsbyNode } from "gatsby"
+
+import path from "path"
+import { createFilePath } from "gatsby-source-filesystem"
+import express from "express"
+import cors from "cors"
 
 // Serve files from `static` in development
 // Remove this when we migrate the old www.jameshush.com marketing

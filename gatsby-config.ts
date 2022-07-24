@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `James Hush's Blog`,
     author: {
@@ -8,6 +10,7 @@ module.exports = {
     description: `Keynote speaker, coach & advisor.`,
     siteUrl: `https://www.jameshush.com`,
   },
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
@@ -222,11 +225,11 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-graphql-config`,
-    `gatsby-plugin-graphql-codegen`,
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
+
+export default config
