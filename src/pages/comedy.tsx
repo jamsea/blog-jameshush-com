@@ -34,7 +34,7 @@ const Comedy = () => {
         </li>
         <li className="text-center font-sofia-pro text-4xl w-full transition ease-in-out delay-400 text-white bg-navy border-white hover:bg-red border-4 p-6 pt-5">
           <a
-            className="text-white text-center"
+            className="text-white text-center block"
             href="https://instagram.com/jamie.hush"
             target="_blank"
           >
@@ -43,7 +43,7 @@ const Comedy = () => {
         </li>
         <li className="text-center font-sofia-pro text-4xl w-full transition ease-in-out delay-400 text-white bg-navy border-white hover:bg-red border-4 p-6 pt-5">
           <a
-            className="text-white"
+            className="text-white text-center block"
             href="https://www.youtube.com/channel/UCwLxVyCXYlqNgORz4uA1ykg/videos"
             target="_blank"
           >
