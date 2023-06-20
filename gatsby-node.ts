@@ -14,6 +14,14 @@ exports.onCreateDevServer = ({ app }) => {
 }
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createRedirect } = actions
+
+  createRedirect({
+    isPermanent: true,
+    fromPath: `/chinese-learning-tips/`,
+    toPath: `https://www.mandarinmindset.com/tips-for-learning-mandarin-chinese-in-taiwan/`,
+  })
+
   const { createPage } = actions
 
   // Define a template for blog post
