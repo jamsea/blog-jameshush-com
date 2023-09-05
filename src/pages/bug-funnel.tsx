@@ -1,5 +1,5 @@
 import React from "react"
-import ActiveCampaignForm from "../components/ActiveCampaignForm"
+import { Script } from "gatsby"
 import Layout from "../components/layout"
 
 type BugFunnelProps = {
@@ -12,11 +12,11 @@ const BugFunnel = ({ location }: BugFunnelProps) => {
   return (
     <Layout location={location} title={"bug funnel"}>
       <article className="prose prose-james lg:prose-xl">
-        <ActiveCampaignForm
-          showCopy={true}
-          formId={3}
-          or="b37539ce92982cb5dd3e61c4973e8250"
-        />
+        <p className="_form_14"></p>
+        <Script
+          src="https://jameshush.activehosted.com/f/embed.php?id=14"
+          type="text/javascript"
+        ></Script>
         <h1 className="font-sofia-pro">"We don't deploy on Fridays."</h1>
         <p>
           Have you heard this before? I used to feel the same way. Until we had

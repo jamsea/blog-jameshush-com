@@ -1,10 +1,9 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, Script, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import ActiveCampaignForm from "../components/ActiveCampaignForm"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -31,11 +30,11 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <ActiveCampaignForm
-            showCopy={true}
-            formId={3}
-            or="b37539ce92982cb5dd3e61c4973e8250"
-          />
+          <p className="_form_14"></p>
+          <Script
+            src="https://jameshush.activehosted.com/f/embed.php?id=14"
+            type="text/javascript"
+          ></Script>
           <Bio />
         </footer>
       </article>
